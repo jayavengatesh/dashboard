@@ -1,0 +1,109 @@
+
+#sidenavhead{
+    color: #FFFFFF;
+    background-color: #3C3B54;
+    font-weight: 400;
+}
+
+#sidenav {
+    background-color: #43425D;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration:none;
+}
+
+#sidenav li{
+    padding: 10px;
+}
+
+#sidenav a{
+
+    text-decoration:none;
+    letter-spacing: 1px;
+    padding: 20px;
+  
+}
+
+#sidenav li:hover{
+    background-color: #3C3B54;
+    transition:0.6s;
+
+}
+
+#icon{
+    font-size: 20px;
+    color:gray;
+    font-weight: 500;
+}
+
+#navbar{
+    padding: 22px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#sideicon{
+    font-size: 34px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#searchicon{
+    font-size: 20px;
+    color: gray;
+
+}
+
+#search{
+     font-family: Arial, Helvetica, sans-serif;
+      max-width: 300px;
+      min-width: 100px;
+      margin-top: 4px;
+}
+
+
+#green-dot{
+    background-color: #81E37A;
+    width: 10px;
+    height: 10px;
+    border:1px solid #81E37A;
+    border-radius: 10px;
+    transform: translate(-8px,5px);
+}
+
+#drop1{
+    list-style: none;
+    
+}
+
+#drop1 a {
+    color: black;
+}
+
+
+@media screen and (max-width:400px) {
+  #search{
+    display: none;
+  }  
+
+
+  #drop1 {
+    display: none;
+  }
+    
+  #profile-img{
+    display: block;
+    padding: 2px;
+    margin-left: 10px;
+  }
+
+
+  #searchicon{
+    position: absolute;
+    left: 80px;
+    top: -25px;
+
+}
+}
