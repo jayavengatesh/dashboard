@@ -1,0 +1,160 @@
+<div class="admin-dashboard">
+
+    <div class="dashboard-left">
+        <div class="charts">
+            <section class="statistic-chart">
+                <div style="display: block;">
+                    <canvas baseChart width="400" height="400"
+                      [type]="'line'"
+                      [data]="lineChartData"
+                      [options]="lineChartOptions"
+                      [legend]="lineChartLegend">
+                    </canvas>
+                  </div>
+            </section>
+    
+            <section class="pi-chart">
+                 <canvas baseChart
+                [type]="'pie'"
+                [datasets]="pieChartDatasets"
+                [labels]="pieChartLabels"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [legend]="pieChartLegend">
+                </canvas>
+            </section>
+        </div>
+        <div style="width: 100%;">
+            <section class="adimin-table">
+                <table class="table">
+                    <thead class="p-4">
+                      <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col">Views</th>
+                        <th scope="col">Sales</th>
+                        <th scope="col">Conversion</th>
+                        <th scope="col">Total</th>
+              
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="p-5">
+                       
+                        <td>google.com</td>
+                        <td>3746</td>
+                        <td>752</td>
+                        <td>43%</td>
+                        <td>$19,291</td>
+                       
+                      </tr>
+                      <tr>
+                       
+                        <td>facebook.com</td>
+                        <td>8126</td>
+                        <td>728</td>
+                        <td>32%</td>
+                        <td>$17,638</td>
+                       
+                      </tr>
+                      <tr>
+                        <td>twitter.com</td>
+                        <td>8836</td>
+                        <td>694</td>
+                        <td>28%</td>
+                        <td>$16,218</td>
+                      </tr>
+              
+                      <tr>
+                        <td>Direct, email, IM</td>
+                        <td>1173</td>
+                        <td>645</td>
+                        <td>24%</td>
+                        <td>$14,421</td>
+                      </tr>
+              
+                      <tr>
+                        <td>linkedin.com</td>
+                        <td>2739</td>
+                        <td>539</td>
+                        <td>20%</td>
+                        <td>$12,370</td>
+                      </tr>
+              
+                      <tr>
+                        <td>instagram.com</td>
+                        <td>2739</td>
+                        <td>539</td>
+                        <td>20%</td>
+                        <td>$12,370</td>
+                      </tr>             
+                    </tbody>
+                  </table>
+            </section>
+        </div>
+        
+
+    </div>
+
+    <div class="dashboard-right">
+        <section class="profile-cart">
+            <div class="profile">
+                <img src="https://uc535bc8523b7c62fffb55c77084.previews.dropboxusercontent.com/p/thumb/ABuvuDToRBANHvDgwTqd7fUK1Fqpp97c8qmyyfB2DwEcHFh9NkdzF-7c6fbV4Fk13A8sUNF9wdMHpW5UQ7uJ1um1IqhYRL1ZZHBmDyBcWzApieRg--_tO9PhLqoruNjEnIdpt0X7orAqJdgmh5SQ0j0W4oDw42KSBinM3um7yr30be2QRgZiVWceFwnIuDoGJSXvJxrp9o2m5wbs4fGg2jgFIy-x55S6MxvnjWTj66zpudkG7YW40uOClFPQbogeY3ocA6R5zeCI64f-2cdMemV4aL-uqAb4pveLx09JEOttL0UP9AhEi7lXEATH9SenwH5GdyWQHo-H4MxPlgY1T1aXeZsy6wFNjDNsGUMyYKxbutUzfpr42ra916vQhEWavQs/p.jpeg" alt="">
+                <h3>Nick Herasimenka</h3>
+                <p>United State</p>
+
+                <ul>
+                    <li><i class="bi bi-twitter"></i></li>
+                    <li><i class="bi bi-facebook"></i></li>
+                    <li><i class="bi bi-linkedin"></i></li>
+                    <li><i class="bi bi-whatsapp"></i></li>
+                </ul>
+            </div>
+            <div class="users">
+                <div class="space-between" style="width: 100%">
+                    <h2>Our Users</h2>
+                    <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="space-between">
+                    <div class="user">
+                        <img src="https://uc511a0a6b81882abcb1c4575840.previews.dropboxusercontent.com/p/thumb/ABvad38AK7RDHoMMq4iQrOLm6voLPLlYZICsPWJ6bgULkoz1ssqE2of7g8ucETQGXK_u8I3hrAB5qJHfrOyZtldw3dbR1uhdcsmF3ZfTzQ_CZyZUdCPLo6Y1rHr4HlBap-LcEfj9Drt3XA6GMjLT8fLer46rJuH4wELI_EstbuWLtAAMoPbwtkf3lD46Eb1AKWC7B7-B92rohpSvqNfZ36x_sgrDnkLqdBaPNd9zxCnWOyqtRT5aQIGiDX6U4Vcs_QNEHG6l6KjaHI-JvbEYN7Ib_AtdkAP-_oj_nrXgyypXSaGhT7j2oz873Y0UEcDYwPKvMTJ4VgzCv7A4HRgp6Aj-XpliyRx16DzKNHDnjdncjcItZWRS295Mdu-0GoqNe1k/p.jpeg" alt="">
+                        <div class="flex-column">
+                            <h4 style="margin-left:1rem; margin-top: 1rem;">Drew James</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                    <p>Moblie: 8034805683</p>
+                </div>
+                <div class="space-between">
+                    <div class="user">
+                        <img src="https://uccd8e264b05dda4a7fd83a1a518.previews.dropboxusercontent.com/p/thumb/ABslIdJ-qjrP0HePpjpnuiN2ParwJOIpUO7Scjt0wxY7tQaifIKT2DSWG9-aBXMBioYpKEr9XkpfBE4rEZzotVA_PWTJU8rAdldUUSXFhPFhT4EyQZK2saymcy-etFPsQB2Hg1LmK4zxmw6tPBaFRlJB8Mj5GghqJqpVDaZtWaItzp-2XUw7uLY3R_vpmxSOxWo_erqgS1H_hXoui9mLHlf5Zh9tRBtNxXvkhiwrXdNkQTAflL3ch6LBC6Zv1YyV-gZcA9wFurO1vnVw7MZqxdyYYCSML9EKCDGO-NFyJe9zgLmWgoox6UgQUQKmwkcgrPuLQQcFH1Q1uRtZ0ODTxVU1sGCRwf8N1zaFPnTfOHGV27nRbcNF1jSqi5_vnl4uxGI/p.jpeg" alt="">
+                        <div class="flex-column">
+                            <h4 style="margin-left:1rem; margin-top: 1rem;">Bravid Kames</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                    <p>Moblie: 8034805683</p>
+                </div>
+                <div class="space-between">
+                    <div class="user">
+                        <img src="https://uc82fe4040540598b12e62fc062d.previews.dropboxusercontent.com/p/thumb/ABvJ1diUNmtrH1aSjCxBO7UZBIympXLb3AI1X-QdeNuqmDQxLmWR2LhqByyzaCh4m2b_syv3Od75MGeU2k6Nnjdyh16B3KlrlllCdURpX6N-ywjMWfBmpvKsjKUt7oyqb0tGS7RYgsGjLuUa8_vyoLunK6tWXtkwEAr5tJcjPkB741MW5k0FE62oBBDL0dv9-70NO4CO_uw73BIyHrvmA4Itb3j18VRqabu5Zn8-LnE9bVi2tm4iRqzQI1MPDq7JcXDU96TTyh-rDkFDtyMkArP6U5GuSeVULOno6LJgAFA8XuDYlhkPBjlzYWxrxPr_jc9-cn5dRMPecUGfycNTCYxWlqq7koSDjXQP4mh8zRHEoosfYRuFhRmwLXkgBSqITfA/p.jpeg" alt="">
+                        <div class="flex-column">
+                            <h4 style="margin-left:1rem; margin-top: 1rem;">Lavid Emes</h4>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                    <p>Moblie: 8034805683</p>
+                </div>
+            </div>
+        </section>
+        <section class="admin-video">
+            <div class="space-between" style="width: 100%">
+                <h2>Product Video</h2>
+                <i class="bi bi-three-dots-vertical"></i>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Oy6hk6Y7VHQ" title="Empower your workforce with Hexnode MDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 10px;"></iframe>
+            </div>
+        </section>
+    </div>
+
+</div>

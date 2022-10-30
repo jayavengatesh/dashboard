@@ -1,16 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ChartOptions } from 'chart.js';
 import { ChartConfiguration, ChartType } from "chart.js";
 
-
-
-
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
 })
-export class MainComponent implements OnInit {
+export class AdminComponent implements OnInit {
 
   public pieChartOptions: ChartOptions<'pie'> = {
     responsive: false,
@@ -21,7 +18,6 @@ export class MainComponent implements OnInit {
   } ];
   public pieChartLegend = true;
   public pieChartPlugins = [];
-
 
   //line chart
 
@@ -50,18 +46,9 @@ export class MainComponent implements OnInit {
     responsive: false
   };
   public lineChartLegend = true;
+  constructor() { }
 
-  constructor() { 
-    
-  }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
-
-
-  }
-
-  
-
-
+}
