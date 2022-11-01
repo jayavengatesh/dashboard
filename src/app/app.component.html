@@ -5,7 +5,7 @@
 
      <i class="bi bi-justify-left" id="sideicon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"></i>
    
-    <form class="d-flex position-absolute mx-5" >
+    <form class="d-flex position-absolute mx-5 justify-content-between" >
          <button  style="border: none;background-color: white;" class="bi bi-search mx-3 my-1"  id="searchicon"></button>
          <input class="form-control me-2 overflow-visible" id="search" style="border:none;width: auto;" type="search"  placeholder="Search transactions,invoices or help" aria-label="Search">
     </form>
@@ -62,12 +62,19 @@
   <div class="offcanvas-body" id="sidenav">
     <li class="my-2"><i class="bi bi-house mx-3 " id="icon"></i><a class="text-light" href="#"> Home</a></li>
     <li class="my-2"><i class="bi bi-file-bar-graph mx-3" id="icon"></i><a class="text-light" href="#">Dashboard</a></li>
-    <li class="my-2"><i class="bi bi-inbox-fill mx-3" id="icon"></i><a class="text-light" href="#">inbox</a></li>
+    <li class="my-2"><i class="bi bi-inbox-fill mx-3" id="icon"></i><a class="text-light" href="#">inbox</a> <span class="badge bg-danger rounded-pill mx-5">99+</span></li>
     <li class="my-2"><i class="bi bi-justify mx-3 " id="icon"></i><a class="text-light" href="#">Products</a></li>
     <li class="my-2"><i class="bi bi-gear-fill mx-3" id="icon"></i><a class="text-light" href="#">admin</a></li>
   </div>
 
 </div>
+
+
+  <div class="d-flex justify-content-between m-5">
+    <h1 class="" style="font-size:32px ;letter-spacing: 1px; ">Overview</h1>
+    <button type="button" id="model-bn" class="btn btn-primary float-end ">Add Funds<i class="bi bi-plus-circle-fill mx-3" style="font-size:20px ;" ></i></button>
+  </div>
+
 
 
 <app-admin></app-admin>

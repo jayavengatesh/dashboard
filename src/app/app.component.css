@@ -82,6 +82,13 @@
     color: black;
 }
 
+#model-bn{
+    background: #6763E3 0% 0% no-repeat padding-box;
+    padding: 20px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
 
 @media screen and (max-width:400px) {
   #search{
